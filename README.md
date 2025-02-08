@@ -59,7 +59,7 @@
    - 使用`Server/Fantasy.Tools.ConfigTable`工具导出JSON
 
 2. **JSON配置**
-   - 导出的JSON文件位于`Config/Json`目录
+   - 导出的JSON文件位于`Server/Server.Main/ServerConfig`目录
    - 可直接修改JSON文件进行配置调整
 
 ## 开发规范
