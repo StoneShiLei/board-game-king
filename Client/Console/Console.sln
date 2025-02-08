@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Main", "Console.Main\Console.Main.csproj", "{1B74959F-A739-4DFD-8733-C9907F541455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fantasy.Console", "Fantays.Console\Fantasy.Console.csproj", "{E104E37C-08FD-4230-BCF5-ED0E556B02F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B74959F-A739-4DFD-8733-C9907F541455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B74959F-A739-4DFD-8733-C9907F541455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B74959F-A739-4DFD-8733-C9907F541455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B74959F-A739-4DFD-8733-C9907F541455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E104E37C-08FD-4230-BCF5-ED0E556B02F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E104E37C-08FD-4230-BCF5-ED0E556B02F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E104E37C-08FD-4230-BCF5-ED0E556B02F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E104E37C-08FD-4230-BCF5-ED0E556B02F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Server.Main": {
+      "commandName": "Project",
+      "environmentVariables": {},
+      "commandLineArgs": "--m Develop"
+    }
+  }
+}
