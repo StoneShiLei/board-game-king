@@ -7,6 +7,21 @@ package Fantasy.Network.Message;
 // 使用方式:
 // 在message协议上方添加// Protocol+空格+协议名字
 // 例如:// Protocol ProtoBuf 或 // Protocol MemoryPack
+message C2G_HelloFantay // IMessage
+{
+	string Test = 1;
+}
+message C2G_HelloRequest // IRequest,G2C_HelloResponse
+{
+	string Test = 1;
+}
+message G2C_HelloResponse // IResponse 
+{
+	string TestRes = 1;
+}
+
+
+
 message C2G_TestMessage // IMessage
 {
 	string Tag = 1;

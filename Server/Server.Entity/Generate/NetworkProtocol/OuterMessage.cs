@@ -18,6 +18,65 @@ using Fantasy.Serialize;
 namespace Fantasy
 {	
 	[ProtoContract]
+	public partial class C2G_HelloFantay : AMessage, IMessage, IProto
+	{
+		public static C2G_HelloFantay Create(Scene scene)
+		{
+			return scene.MessagePoolComponent.Rent<C2G_HelloFantay>();
+		}
+		public override void Dispose()
+		{
+			Test = default;
+#if FANTASY_NET || FANTASY_UNITY
+			GetScene().MessagePoolComponent.Return<C2G_HelloFantay>(this);
+#endif
+		}
+		public uint OpCode() { return OuterOpcode.C2G_HelloFantay; }
+		[ProtoMember(1)]
+		public string Test { get; set; }
+	}
+	[ProtoContract]
+	public partial class C2G_HelloRequest : AMessage, IRequest, IProto
+	{
+		public static C2G_HelloRequest Create(Scene scene)
+		{
+			return scene.MessagePoolComponent.Rent<C2G_HelloRequest>();
+		}
+		public override void Dispose()
+		{
+			Test = default;
+#if FANTASY_NET || FANTASY_UNITY
+			GetScene().MessagePoolComponent.Return<C2G_HelloRequest>(this);
+#endif
+		}
+		[ProtoIgnore]
+		public G2C_HelloResponse ResponseType { get; set; }
+		public uint OpCode() { return OuterOpcode.C2G_HelloRequest; }
+		[ProtoMember(1)]
+		public string Test { get; set; }
+	}
+	[ProtoContract]
+	public partial class G2C_HelloResponse : AMessage, IResponse, IProto
+	{
+		public static G2C_HelloResponse Create(Scene scene)
+		{
+			return scene.MessagePoolComponent.Rent<G2C_HelloResponse>();
+		}
+		public override void Dispose()
+		{
+			ErrorCode = default;
+			TestRes = default;
+#if FANTASY_NET || FANTASY_UNITY
+			GetScene().MessagePoolComponent.Return<G2C_HelloResponse>(this);
+#endif
+		}
+		public uint OpCode() { return OuterOpcode.G2C_HelloResponse; }
+		[ProtoMember(1)]
+		public string TestRes { get; set; }
+		[ProtoMember(2)]
+		public uint ErrorCode { get; set; }
+	}
+	[ProtoContract]
 	public partial class C2G_TestMessage : AMessage, IMessage, IProto
 	{
 		public static C2G_TestMessage Create(Scene scene)
