@@ -6,6 +6,7 @@
 
 ## 项目结构
 
+```
 ├── Client                              # Unity客户端项目
 │   ├── Assets                          # Unity资源目录
 │   │   ├── Scenes                      # 场景文件
@@ -29,6 +30,7 @@
         ├── Inner                       # 服务器间协议
         ├── Outer                       # 客户端-服务器协议
         └── RouteType.Config            # Route消息类型配置
+```
 
 ## 开发环境配置
 
