@@ -50,13 +50,13 @@
    - 在`NetworkProtocol/Inner`目录下定义
 
 3. **导出协议文件**
-   - 使用Server/Fantasy.Tools.NetworkProtocol工具导出网络协议文件
+   - 使用`Server/Fantasy.Tools.NetworkProtocol`工具导出网络协议文件
 
 ## 配置文件管理
 
 1. **Excel配置**
    - 在`Config/Excel`目录下修改配置
-   - 使用Server/Fantasy.Tools.ConfigTable工具导出JSON
+   - 使用`Server/Fantasy.Tools.ConfigTable`工具导出JSON
 
 2. **JSON配置**
    - 导出的JSON文件位于`Config/Json`目录
