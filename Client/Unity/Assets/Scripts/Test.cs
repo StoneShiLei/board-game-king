@@ -23,7 +23,7 @@ public class Test : MonoBehaviour
     private void OnConnectButtonClick()
     {
         Debug.Log("点击连接按钮");
-        _session = Entry.GameScene.Connect("127.0.0.1:38888", NetworkProtocolType.KCP, () =>
+        _session = Entry.GameScene.Connect("127.0.0.1:38888", NetworkProtocolType.WebSocket, () =>
         {
             ConnectButton.enabled = false;
             _session.AddComponent<SessionHeartbeatComponent>().Start(2000);

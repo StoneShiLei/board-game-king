@@ -1,3 +1,3 @@
 {"List":[
-{"Id":1001,"ProcessConfigId":1,"WorldConfigId":1,"SceneRuntimeType":"ThreadPool","SceneTypeString":"Gate","NetworkProtocol":"KCP","OuterPort":38888,"InnerPort":11001,"SceneType":3}
+{"Id":1001,"ProcessConfigId":1,"WorldConfigId":1,"SceneRuntimeType":"ThreadPool","SceneTypeString":"Gate","NetworkProtocol":"WebSocket","OuterPort":38888,"InnerPort":11001,"SceneType":3}
 ]}
