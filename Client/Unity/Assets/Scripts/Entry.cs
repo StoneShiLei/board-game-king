@@ -9,14 +9,14 @@ public class Entry : MonoBehaviour
 
     void Start()
     {
-        // ³õÊ¼»¯¿ò¼Ü
+        // åˆå§‹åŒ–æ¡†æ¶
         Fantasy.Platform.Unity.Entry.Initialize(GetType().Assembly);
         StartAsync().Coroutine();
     }
 
     private async FTask StartAsync()
     {
-        // ´´½¨ÓÃÒ»¸ö¿Í»§¶ËµÄScene
+        // åˆ›å»ºç”¨ä¸€ä¸ªå®¢æˆ·ç«¯çš„Scene
         GameScene = await Fantasy.Platform.Unity.Entry.CreateScene();
     }
 

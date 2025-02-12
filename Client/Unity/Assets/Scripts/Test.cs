@@ -22,18 +22,18 @@ public class Test : MonoBehaviour
 
     private void OnConnectButtonClick()
     {
-        Debug.Log("µã»÷Á¬½Ó°´Å¥");
+        Debug.Log("ç‚¹å‡»è¿æ¥æŒ‰é’®");
         _session = Entry.GameScene.Connect("127.0.0.1:38888", NetworkProtocolType.WebSocket, () =>
         {
             ConnectButton.enabled = false;
             _session.AddComponent<SessionHeartbeatComponent>().Start(2000);
-            Debug.Log("Á´½Ó³É¹¦");
+            Debug.Log("é“¾æ¥æˆåŠŸ");
         }, () =>
         {
-            Debug.Log("Á´½ÓÊ§°Ü");
+            Debug.Log("é“¾æ¥å¤±è´¥");
         }, () =>
         {
-            Debug.Log("Á´½Ó¶Ï¿ª");
+            Debug.Log("é“¾æ¥æ–­å¼€");
         }, false);
     }
 
@@ -44,17 +44,17 @@ public class Test : MonoBehaviour
             Test = "Hello!"
         });
 
-        Debug.Log("Ïò·şÎñÆ÷·¢ËÍÁËÒ»ÌõÏûÏ¢");
+        Debug.Log("å‘æœåŠ¡å™¨å‘é€äº†ä¸€æ¡æ¶ˆæ¯");
     }
 
     private async FTask OnCallButtonClick()
     {
-        Debug.Log("Ïò·şÎñÆ÷·¢ËÍÏûÏ¢...");
+        Debug.Log("å‘æœåŠ¡å™¨å‘é€æ¶ˆæ¯...");
         var res = (G2C_HelloResponse)await _session.Call(new C2G_HelloRequest
         {
             Test = "Hello From Call!"
         });
 
-        Debug.Log($"ÊÕµ½·şÎñÆ÷·µ»ØÏûÏ¢:{res.TestRes}");
+        Debug.Log($"æ”¶åˆ°æœåŠ¡å™¨è¿”å›æ¶ˆæ¯:{res.TestRes}");
     }
 }
