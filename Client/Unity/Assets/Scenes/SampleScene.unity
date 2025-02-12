@@ -469,7 +469,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655f76b86ec49e74c86cd55418288a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 85b5cf89540ed4a4d92b961fc3e88941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &410087039
@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 553295113}
   - component: {fileID: 553295112}
   - component: {fileID: 553295111}
-  - component: {fileID: 553295110}
+  - component: {fileID: 553295115}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -678,21 +678,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &553295110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553295109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89c20a63d01c07c46a22bab33981db7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ConnectButton: {fileID: 192761917}
-  SendMessageButton: {fileID: 1554890055}
-  CallButton: {fileID: 1759078808}
 --- !u!114 &553295111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +763,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &553295115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553295109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ba63d7d22485c48b600b5c5ada5365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectButton: {fileID: 192761917}
+  SendMessageButton: {fileID: 1554890055}
+  CallButton: {fileID: 1759078808}
 --- !u!1 &684392803
 GameObject:
   m_ObjectHideFlags: 0
